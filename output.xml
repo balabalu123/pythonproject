@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20230206 17:01:14.164" rpa="false" schemaversion="3">
+<suite id="s1" name="TC01" source="C:\Users\balua\PycharmProjects\pythoncall\TestCases\TC01.robot">
+<test id="s1-t1" name="Navigate Test" line="14">
+<kw name="Start test cases">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230206 17:01:14.866" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<status status="PASS" starttime="20230206 17:01:14.865" endtime="20230206 17:01:20.252"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230206 17:01:20.252" endtime="20230206 17:01:20.479"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 17:01:23.481" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230206 17:01:20.479" endtime="20230206 17:01:23.481"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textbox}</arg>
+<arg>${text value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230206 17:01:23.484" level="INFO">Typing text 'textvalue' into text field 'googletxtbox'.</msg>
+<msg timestamp="20230206 17:01:23.721" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230206 17:01:23.721" level="FAIL">Element with locator 'googletxtbox' not found.</msg>
+<status status="FAIL" starttime="20230206 17:01:23.482" endtime="20230206 17:01:23.727"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230206 17:01:23.727" endtime="20230206 17:01:23.727"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230206 17:01:23.728" endtime="20230206 17:01:23.728"/>
+</kw>
+<status status="FAIL" starttime="20230206 17:01:14.864" endtime="20230206 17:01:23.728"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230206 17:01:23.729" endtime="20230206 17:01:23.729"/>
+</kw>
+<status status="FAIL" starttime="20230206 17:01:14.862" endtime="20230206 17:01:23.729">Element with locator 'googletxtbox' not found.</status>
+</test>
+<status status="FAIL" starttime="20230206 17:01:14.168" endtime="20230206 17:01:23.731"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC01">TC01</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230206 17:01:14.860" level="ERROR">Error in file 'C:\Users\balua\PycharmProjects\pythoncall\TestCases\TC01.robot' on line 3: Importing library 'C:\Users\balua\PycharmProjects\pythoncall\py\google.py' failed: TypeError: 'module' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\balua\PycharmProjects\pythoncall\py\google.py", line 39, in &lt;module&gt;
+    ch=chrome(webdriver)
+       ^^^^^^^^^^^^^^^^^
+  File "C:\Users\balua\PycharmProjects\pythoncall\py\google.py", line 6, in chrome
+    webdriver.chrome()
+PYTHONPATH:
+  C:\Users\balua\PycharmProjects\pythoncall\py
+  C:\Users\balua\PycharmProjects\pythoncall\venv\Lib\site-packages
+  C:\Python311\python311.zip
+  C:\Python311\DLLs
+  C:\Python311\Lib
+  C:\Python311
+  C:\Users\balua\PycharmProjects\pythoncall\venv</msg>
+</errors>
+</robot>
