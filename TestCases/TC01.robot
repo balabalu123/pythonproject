@@ -18,8 +18,13 @@ Navigate Test
 #    Navigation to Home page
 
     Close Browser
+
+    addition
+    multiplication
+
+
     
-addition
+
 
 
    
